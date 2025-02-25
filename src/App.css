@@ -1,0 +1,293 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial','Courier-Bol' ;
+  background-color: #767677; 
+  height: 100%;
+}
+
+.home-container {
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  height: 91vh;
+  padding: 3rem 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.text-section {
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 350px; 
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .profile-img {
+    width: 250px; 
+    height: 250px;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+
+.about-container {
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.about-text {
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.about-image {
+  max-width: 350px;
+  border: 5px solid #fff; 
+}
+
+@media (max-width: 768px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    max-width: 200px;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text {
+    text-align: center; 
+  }
+
+  .about-image {
+    max-width: 180px;
+
+  }
+}
+
+.skills-container, .projects-container, .contact-container {
+  background: linear-gradient(300deg, #2C3E50, #34495E);
+  padding: 5rem 2rem;
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-list span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 350px;
+}
+
+.contact-container {
+  background: linear-gradient(135deg, #1B2631, #3F4E4F);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  font-style: oblique;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #050505;
+  color: #3F4E4F;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #474545;
+}
+
+.contact-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #9e9797;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-description, .contact-form label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-list span, .contact-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
